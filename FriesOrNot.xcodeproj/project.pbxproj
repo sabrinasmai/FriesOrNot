@@ -13,6 +13,8 @@
 		B845E7F41F318F3C0048E355 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B845E7F31F318F3C0048E355 /* Assets.xcassets */; };
 		B845E7F71F318F3C0048E355 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B845E7F51F318F3C0048E355 /* LaunchScreen.storyboard */; };
 		B845E8021F318F3C0048E355 /* FriesOrNotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B845E8011F318F3C0048E355 /* FriesOrNotTests.swift */; };
+		B845E80D1F31A0060048E355 /* CustomVisionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B845E80C1F31A0060048E355 /* CustomVisionResult.swift */; };
+		B845E80F1F31A0570048E355 /* CustomVisionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B845E80E1F31A0570048E355 /* CustomVisionService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		B845E7FD1F318F3C0048E355 /* FriesOrNotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FriesOrNotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B845E8011F318F3C0048E355 /* FriesOrNotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriesOrNotTests.swift; sourceTree = "<group>"; };
 		B845E8031F318F3C0048E355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B845E80C1F31A0060048E355 /* CustomVisionResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomVisionResult.swift; sourceTree = "<group>"; };
+		B845E80E1F31A0570048E355 /* CustomVisionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomVisionService.swift; path = ../CustomVisionService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +81,14 @@
 		B845E7EB1F318F3C0048E355 /* FriesOrNot */ = {
 			isa = PBXGroup;
 			children = (
+				B845E80E1F31A0570048E355 /* CustomVisionService.swift */,
 				B845E7EC1F318F3C0048E355 /* AppDelegate.swift */,
 				B845E7EE1F318F3C0048E355 /* ViewController.swift */,
 				B845E7F01F318F3C0048E355 /* Main.storyboard */,
 				B845E7F31F318F3C0048E355 /* Assets.xcassets */,
 				B845E7F51F318F3C0048E355 /* LaunchScreen.storyboard */,
 				B845E7F81F318F3C0048E355 /* Info.plist */,
+				B845E80C1F31A0060048E355 /* CustomVisionResult.swift */,
 			);
 			path = FriesOrNot;
 			sourceTree = "<group>";
@@ -146,6 +152,7 @@
 				TargetAttributes = {
 					B845E7E81F318F3C0048E355 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = B2EA5JR3X6;
 						ProvisioningStyle = Automatic;
 					};
 					B845E7FC1F318F3C0048E355 = {
@@ -199,6 +206,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B845E80F1F31A0570048E355 /* CustomVisionService.swift in Sources */,
+				B845E80D1F31A0060048E355 /* CustomVisionResult.swift in Sources */,
 				B845E7EF1F318F3C0048E355 /* ViewController.swift in Sources */,
 				B845E7ED1F318F3C0048E355 /* AppDelegate.swift in Sources */,
 			);
@@ -341,9 +350,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B2EA5JR3X6;
 				INFOPLIST_FILE = FriesOrNot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = come.sabrinasmai.FriesOrNot;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sabrinasmai.FriesOrNot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -353,9 +363,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B2EA5JR3X6;
 				INFOPLIST_FILE = FriesOrNot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = come.sabrinasmai.FriesOrNot;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sabrinasmai.FriesOrNot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
